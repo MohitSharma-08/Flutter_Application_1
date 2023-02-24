@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/drawer.dart';
+
 class Homep extends StatelessWidget {
   const Homep ({super.key});
 
@@ -7,14 +9,15 @@ class Homep extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold (
       appBar: AppBar(
-        title: Text("Catalog App"),
+        title: Text("Catalog App" , style: TextStyle(color : Colors.black),),
+
       ),
       body:Center( 
         child:Container(
-          child:const Text("Welcome hii "), 
+          child: Text("Welcome hii "), 
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
